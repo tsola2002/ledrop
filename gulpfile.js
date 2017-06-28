@@ -187,7 +187,7 @@ gulp.task('watch', function() {
     //when any file with a .scss extension changes, we run the sass task
     gulp.watch('components/sass/*.scss', ['sass']);
     //when any html file changes do a livereload
-    gulp.watch('builds/development/*.html', ['html']);
+     gulp.watch(htmlSources, ['html']);
     //when any image file changes do a livereload
     gulp.watch('builds/development/images/**/*.*', ['images']);
 });
